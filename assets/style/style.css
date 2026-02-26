@@ -79,6 +79,10 @@ select{
     height: 2rem;
 }
 
+select:hover{
+    cursor: pointer;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
@@ -92,6 +96,17 @@ ul{
     list-style: none;
     gap: 1rem;
     font-size: large;
+}
+
+
+li:hover{
+    cursor: pointer;
+    color:#fff8dc
+}
+
+i:hover{
+    cursor: pointer;
+    color: #fff8dc;
 }
 
 
@@ -133,6 +148,23 @@ ul{
         flex-direction: row;
     }
 
+}
+
+main{
+    display: flex;
+    gap: 1rem;
+}
+
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cuadro,img{
+    width: 200px;
+    height: 200px;
 }
 
 
