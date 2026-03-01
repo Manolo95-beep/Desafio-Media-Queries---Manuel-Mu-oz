@@ -115,7 +115,6 @@ img{
 }
 
 .card{
-    border: 1px solid black;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -186,11 +185,53 @@ button:hover{
         flex-direction: row;
     }
 
+    img{
+        width: 350px;
+        height: 300px;
+    }
+
+    .card{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.4rem;
+        gap: 0.5rem;
+
+    }
+
+    .grid-cards{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        row-gap: 1rem;
+    }
+
 }
 
 main{
     display: flex;
     gap: 1rem;
+}
+
+.pagination{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    
+}
+
+.pagination a{
+    text-decoration: none;
+    border: 1px solid #f4a460 ;
+    padding: 0.5rem;
+    color: #fff8dc;
+    background: #f4a460;
+}
+
+.pagination a:hover{
+    background: #fff8dc;
+    color: #f4a460;
 }
 
 
@@ -228,13 +269,12 @@ main{
     }
 
     img{
-        width: 500px;
-        height: 450px;
+        width: 400px;
+        height: 350px;
     }
 
     .card{
-        border: 1px solid black;
-        width: 500px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -245,7 +285,7 @@ main{
 
     .grid-cards{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3,auto);
         row-gap: 1rem;
     }
     
